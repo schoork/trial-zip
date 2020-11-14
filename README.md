@@ -1,24 +1,17 @@
-# README
+# Zipping Files
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Uses the [RubyZip](https://github.com/rubyzip/rubyzip) gem.
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+In the Gemfile:
 
-* System dependencies
+```
+gem 'rubyzip'
+```
 
-* Configuration
+## Usage
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. Check lib/tasks/zip.rake for a basic zip of current files.
+2. Check app/controllers/home_controller.rb (download) action for how to
+   send the zip as data (link on app/views/home/index.html.erb).
